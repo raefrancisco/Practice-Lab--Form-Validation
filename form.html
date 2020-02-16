@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <script src="form.js"></script>
+    
+  <link rel="stylesheet" href="form.css">
+
+
+</head>
+<body>
+    
+    <form>
+        <fieldset>
+            <legend>Create a New Event</legend>
+            Event type: &nbsp;&nbsp;&nbsp;&nbsp;
+            <select id= "options" >
+                <option value = "Choose Option"disabled selected>Choose Option</option>
+                <option value = "bday">Birthday</option>
+                <option value = "meeting">Meeting </option>
+                <option value = "reunion">Reunion</option>
+                <option value = "seminar">Seminar</option>
+            </select><br><br>
+    
+           Event Title: &nbsp;&nbsp;&nbsp;
+            <input type = "text"  id = "eTitle" placeholder = "Enter Event Title" required ><br/>
+            <br>
+           Event Date: &nbsp;&nbsp;&nbsp;
+           <input type="date" id="date"> &nbsp;&nbsp; to &nbsp;&nbsp; <input type="date" id="dateA" >
+           <br><br>
+           Posting Date: &nbsp;&nbsp;
+           <input type = "date" id="dateB">
+           <br><br><br>
+           <input type="checkbox" > Is registration required?
+           <br>
+           <br>
+           <input type="checkbox"> Is this event associated with any Family Programs?
+           <br>
+           <br>
+           <input type="checkbox"> Upon registration completion, are users to receive an auto generated email?
+           <br>
+           <br>
+           <input type="checkbox"> Is there a point of contact?
+           <br>
+           <br>
+           <input type="checkbox"> Is there a hosting command post of contact?
+           <br>
+           <br>
+           <br>
+            <label id='success'></label>
+           <div class= "button">
+            <input type="button" class="submit" id='submit-button' value="Submit" onclick="validate()">
+            <button type="reset" class="reset"  value="Cancel">Cancel</button>
+            
+            </div>
+    
+    
+    
+    </fieldset>       
+    
+        </form>
+    </body>
+    </html>
